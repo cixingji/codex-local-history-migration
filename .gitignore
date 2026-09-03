@@ -1,0 +1,11 @@
+sessions/
+archived_sessions/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+auth.json
+.env
+installation_id
+checksums.json
+Codex-*-Backup*/
+Codex-History-Export-*/
