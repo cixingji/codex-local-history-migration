@@ -12,22 +12,22 @@ Windows 工具集：备份、恢复、跨电脑合并 Codex 本地会话，并�
 ## 目录结构
 
 ```text
-01-一键入口/       普通用户双击的 Windows 启动文件
-02-脚本实现/       PowerShell 和 Node.js 实现代码
-03-使用文档/       中文操作手册
-04-开源资料/       安全、发布和贡献相关资料
+01-entry/          普通用户双击的 Windows 启动文件
+02-scripts/        PowerShell 和 Node.js 实现代码
+03-docs/           中文操作手册
+04-release/        安全、发布和贡献相关资料
 README.md          项目总入口
 LICENSE            MIT 许可证
 ```
 
-第一次使用请先打开 [`03-使用文档/Codex本地会话备份恢复与跨电脑合并指南.md`](03-使用文档/Codex本地会话备份恢复与跨电脑合并指南.md)。
+第一次使用请先打开 [`03-docs/Codex本地会话备份恢复与跨电脑合并指南.md`](03-docs/Codex本地会话备份恢复与跨电脑合并指南.md)。
 
 ## 快速开始
 
 1. 两台电脑完全退出 Codex Desktop 和 Codex++。
-2. 源电脑进入 `01-一键入口`，双击 `Export-Codex-History.cmd`。
+2. 源电脑进入 `01-entry`，双击 `Export-Codex-History.cmd`。
 3. 将桌面生成的 `Codex-History-Export-日期时间` 整个文件夹复制到目标电脑。
-4. 先在目标电脑双击 `01-一键入口/Backup-Codex-Target-Before-Merge.cmd`，再双击导出文件夹内的 `Import-Codex-History-To-OpenAI.cmd`。
+4. 先在目标电脑双击 `01-entry/Backup-Codex-Target-Before-Merge.cmd`，再双击导出文件夹内的 `Import-Codex-History-To-OpenAI.cmd`。
 5. 启动官方 Codex，切换到官方 OpenAI provider，抽查历史会话。
 
 不依赖 Codex++ 的“立即修复历史会话”。
@@ -36,11 +36,11 @@ LICENSE            MIT 许可证
 
 | 文件 | 用途 |
 | --- | --- |
-| `01-一键入口/*.cmd` | 普通用户双击的导出、备份、导入入口 |
-| `02-脚本实现/*.js` | 会话导出和跨电脑合并实现 |
-| `02-脚本实现/*.ps1` | 目标电脑完整备份实现 |
-| `03-使用文档/` | 操作手册、存储模型和问题诊断 |
-| `04-开源资料/` | 隐私安全和发布检查资料 |
+| `01-entry/*.cmd` | 普通用户双击的导出、备份、导入入口 |
+| `02-scripts/*.js` | 会话导出和跨电脑合并实现 |
+| `02-scripts/*.ps1` | 目标电脑完整备份实现 |
+| `03-docs/` | 操作手册、存储模型和问题诊断 |
+| `04-release/` | 隐私安全和发布检查资料 |
 
 ## 本地数据模型
 
