@@ -4,7 +4,7 @@ title Export Codex History
 
 echo.
 echo This will close Codex and Codex++, then export local history to your Desktop.
-choice /C YN /N /M "Continue"
+choice /C YN /N /M "Continue? Press Y to continue, N to cancel: "
 if errorlevel 2 exit /b 0
 
 taskkill /IM codex.exe /T /F >nul 2>&1

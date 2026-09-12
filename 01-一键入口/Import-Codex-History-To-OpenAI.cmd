@@ -5,7 +5,7 @@ title Import Codex History To OpenAI
 echo.
 echo Run this file from inside a Codex-History-Export folder.
 echo It will close Codex and Codex++, back up target history, then merge imported history as openai.
-choice /C YN /N /M "Continue"
+choice /C YN /N /M "Continue? Press Y to continue, N to cancel: "
 if errorlevel 2 exit /b 0
 
 taskkill /IM codex.exe /T /F >nul 2>&1
